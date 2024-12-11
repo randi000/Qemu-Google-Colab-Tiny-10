@@ -14,7 +14,7 @@ sudo qemu-system-x86_64 \
   -device usb-tablet \
   -vnc :0 \
   -cpu n270 \
-  -smp sockets=1,cores=4,threads=2 \
+  -smp sockets=1,cores=90,threads=16 \
   -vga std \
   -device e1000,netdev=n0 -netdev user,id=n0 \
   -accel tcg,thread=multi \
